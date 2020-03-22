@@ -1,0 +1,67 @@
+<androidx.cardview.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    card_view:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:id="@+id/ly">
+
+        <TextView
+            android:id="@+id/defnition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/thumbsup_icon"
+            android:paddingRight="10dp"
+            android:layout_below="@+id/defnition"
+            android:src="@drawable/thumbsup"/>
+
+        <TextView
+            android:id="@+id/thumbsup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/defnition"
+            android:layout_toRightOf="@+id/thumbsup_icon"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/thumbsup"
+            android:paddingRight="10dp"
+            android:layout_below="@+id/defnition"
+            android:id="@+id/thumbsdown_icon"
+            android:src="@drawable/thumbsdown"/>
+        <TextView
+            android:id="@+id/thumbsdown"
+            android:textSize="20sp"
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:layout_toRightOf="@+id/thumbsdown_icon"
+            android:layout_below="@+id/defnition"
+            android:textStyle="bold"
+
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
